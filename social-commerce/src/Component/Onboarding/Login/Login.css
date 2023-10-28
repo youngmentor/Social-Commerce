@@ -1,0 +1,437 @@
+.Loginmain{
+    width: 100%;
+    height: 100vh;
+    background-color: aliceblue;
+}
+
+.LoginmainWrap{
+    width: 100%;
+    height: 100%;
+    background-color: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginText{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6%;
+}
+
+.LoginText h1{
+    color: #5E60CE;
+    font-size: 50px;
+}
+
+.LoginText span{
+    width: 62%;
+    font-size: 20px;
+    color: #1c1e21;
+    /* background-color: pink; */
+}
+
+.LoginInput{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.LoginInputBox{
+    width: 60%;
+    height: 55%;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LoginInputBoxWrap{
+    width: 93%;
+    height: 93%;
+    /* background-color: orange; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.LoginInputBoxWrap input{
+    width: 100%;
+    height: 16%;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.LoginInputBoxWrap input:focus{
+    border: 1px solid #1877f2;
+}
+
+.LoginInputBoxWrap button{
+    width: 100%;
+    height: 15%;
+    background-color: #5E60CE;
+    color: white;
+    border-radius: 6px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+
+.LoginInputBoxWrap p{
+    color: #1877f2;
+    margin-bottom: 6px;
+}
+
+.LoginInputBoxWrap p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.LogingrayLine{
+    width: 100%;
+    height: 0.01em;
+    background-color: lightgray;
+}
+
+.LoginInputBoxWrap .LSignUpButton{
+    width: 100%;
+    height: 16%;
+    background-color: transparent;
+    border: 1px solid #5E60CE;
+    color: #5E60CE;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.errors{
+    width: 50%;
+    height: 10%;
+    color: red;
+    font-size: 16px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* background-color: pink; */
+}
+
+.LoginInputBoxWrap .inputError {
+    border: 1px solid red;
+  }
+
+@media screen and (max-width: 1268px) {
+    .LoginText{
+        width: 50%;
+        height: 100%;
+    }
+
+    .LoginText h1{
+        color: #1877f2;
+        font-size: 60px;
+    }
+    
+    .LoginText span{
+        width: 80%;
+        font-size: 25px;
+        color: #1c1e21;
+        /* background-color: red; */
+    }
+
+    .LoginInput{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .LoginInputBox{
+        width: 90%;
+        height: 55%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .LoginInputBoxWrap{
+        width: 93%;
+        height: 93%;
+    }
+
+    .LoginInputBoxWrap input{
+        width: 100%;
+        height: 16%;
+        border-radius: 6px;
+        padding: 10px;
+        border: 1px solid gray;
+        font-size: 22px;
+        outline: none;
+    }
+    
+    .LoginInputBoxWrap input:focus{
+        border: 2px solid #1877f2;
+    }
+    
+    .LoginInputBoxWrap button{
+        width: 100%;
+        height: 15%;
+        font-size: 30px;
+    }
+    
+    .LoginInputBoxWrap p{
+        color: #1877f2;
+        font-size: 20px;
+        margin-bottom: 6px;
+    }
+    
+    .LoginInputBoxWrap p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .LoginInputBoxWrap .LSignUpButton{
+        width: 50%;
+        height: 16%;
+        background-color: #42b72a;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .LoginInputBoxWrap .errors{
+        color: red;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .errors{
+        width: 80%;
+        height: 10%;
+        color: red;
+        font-size: 25px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        /* background-color: pink; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Loginmain{
+        width: 100%;
+        height: 100vh;
+        background-color: pink;
+    }
+
+    .LoginmainWrap{
+        width: 100%;
+        height: 100%;
+        background-color: #f0f2f5;
+    }
+    
+    .LoginText{
+        width: 50%;
+        height: 100%;
+    }
+
+    .LoginText h1{
+        color: #1877f2;
+        font-size: 43px;
+    }
+    
+    .LoginText span{
+        width: 93%;
+        font-size: 18px;
+        color: #1c1e21;
+    }
+
+    .LoginInput{
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .LoginInputBox{
+        width: 100%;
+    }
+
+    .LoginInputBoxWrap .LSignUpButton{
+        width: 70%;
+        height: 14%;
+    }
+
+    .LoginInputBoxWrap .errors{
+        color: red;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .errors{
+        width: 80%;
+        height: 10%;
+        color: red;
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .LoginmainWrap{
+        width: 100%;
+        height: 100%;
+        background-color: #f0f2f5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .LoginText{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .LoginText h1{
+        color: #1877f2;
+        font-size: 30px;
+    }
+    
+    .LoginText span{
+        font-size: 14px;
+        color: #1c1e21;
+        text-align: center;
+    }
+
+    .LoginInput{
+        width: 100%;
+        height: 80%;
+    }
+    
+    .LoginInputBox{
+        width: 95%;
+        height: 95%;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        /* border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center; */
+    }
+
+    .LoginInputBoxWrap{
+        width: 93%;
+        height: 93%;
+        /* background-color: orange; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .LoginInputBoxWrap input{
+        width: 100%;
+        height: 13%;
+        border-radius: 6px;
+        padding: 10px;
+        border: 1px solid gray;
+        font-size: 16px;
+        outline: none;
+    }
+    
+    .LoginInputBoxWrap input:focus{
+        border: 2px solid #1877f2;
+    }
+    
+    .LoginInputBoxWrap button{
+        width: 100%;
+        height: 13%;
+        background-color: #1877f2;
+        color: white;
+        border-radius: 6px;
+        font-size: 20px;
+        border: none;
+        cursor: pointer;
+        margin-bottom: 12px;
+    }
+    
+    .LoginInputBoxWrap p{
+        color: #1877f2;
+        margin-bottom: 6px;
+    }
+    
+    .LoginInputBoxWrap p:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    .LogingrayLine{
+        width: 100%;
+        height: 0.01em;
+        background-color: lightgray;
+    }
+    
+    .LoginInputBoxWrap .LSignUpButton{
+        width: 80%;
+        height: 13%;
+        background-color: #42b72a;
+        font-size: 17px;
+        font-weight: bold;
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    .LoginInputBoxWrap .errors{
+        color: red;
+        font-size: 12px;
+        text-align: left;
+    }
+
+    .errors{
+        width: 100%;
+        height: 10%;
+        color: red;
+        font-size: 16px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}
