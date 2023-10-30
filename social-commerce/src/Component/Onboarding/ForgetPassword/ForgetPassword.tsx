@@ -53,6 +53,7 @@ const ForgetPassword = () => {
                 />
                 {errors.email && <p style={{ color: "red" }}>{errors?.email?.message}</p>}
                 <button className='ForgetPasswordButton' onClick={handleSubmit(onSubmit)}>Submit</button>
+                <hr className='ForgetPasswordGreyLine' />
                 <div className='ForgetPasswordBackToLogin'>
                     <button className='ForgetPasswordBackToLoginButton' onClick={() => navigate('/')} >Back login </button>
                 </div>
