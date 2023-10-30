@@ -4,16 +4,22 @@ import "./Login.css";
 import { useNavigate } from "react-router-dom";
 
 type FormValues = {
-  contact: string | Number;
+  contact: string;
   password: string;
 };
 
 function Login() {
-  const form = useForm<FormValues>();
+  const form = useForm<FormValues>({
+      
+      defaultValues: {
+          contact: "",
+        password: "",
+    }
+  });
   const { register, handleSubmit, formState, reset } = form;
   const { errors } = formState;
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const onSubmit = (data: FormValues) => {
     console.log("Form Submitted", data);
@@ -51,6 +57,24 @@ function Login() {
                         /^[a-zA-Z0-9, !#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
                       message: "Invalid email format",
                     },
+                    // validate: (fieldValue) => {
+                    //     return fieldValue !== "oriadeyusuf123@gmail.com" || "Enter a different email address"
+                    // }
+
+                    validate: {
+                      notAdmin: (fieldValue) => {
+                        return (
+                          fieldValue !== "oriadeyusuf123@gmail.com" ||
+                          "Enter a different email address"
+                        );
+                      },
+                      notBlackListed: (fieldValue) => {
+                        return (
+                          !fieldValue.endsWith("badcoom.com") ||
+                          "This type is not supported"
+                        );
+                      },
+                    },
                   })}
                   className={errors.contact ? "inputError" : ""}
                 />
@@ -70,7 +94,12 @@ function Login() {
                 <button>Log in</button>
                 <p onClick={() => navigate("/")}>Forgotten password?</p>
                 <hr className="LogingrayLine" />
-                <button className="LSignUpButton" onClick={() => navigate("/signup")}>Create new account</button>
+                <button
+                  className="LSignUpButton"
+                  onClick={() => navigate("/signup")}
+                >
+                  Create new account
+                </button>
               </div>
             </form>
             <p className="errors">
@@ -84,6 +113,14 @@ function Login() {
       </div>
     </>
   );
-};
+}
 
+          // defaultValues: async () => {
+          //   const response = await fetch("https://https://jsonplaceholder.typicode.com/users/1");
+          //   const data = await response.json();
+          //   return {
+          //     contact: data.email,
+          //     password: "",
+          //   };
+          // },
 export default Login;
