@@ -2,11 +2,7 @@ import { useForm } from "react-hook-form";
 // import { DevTool } from "@hookform/devtools";
 import "./Login.css";
 import { useNavigate } from "react-router-dom";
-
-type FormValues = {
-  contact: string;
-  password: string;
-};
+import { FormValues } from "../../TYPE/type.check";
 
 function Login() {
   const form = useForm<FormValues>({
