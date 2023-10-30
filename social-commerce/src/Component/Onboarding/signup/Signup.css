@@ -1,0 +1,210 @@
+.signUpContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #5e60ce;
+}
+
+.signUpMain {
+    width: 30%;
+    height: 73%;
+    background: white;
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.signUpHeader {
+    width: 100%;
+    height: 15%;
+    /* background: green; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dadde1;
+}
+
+.signUpHeaderWrapper {
+    width: 93%;
+    height: 76%;
+}
+
+.sigUpHeaderCloseBtnDiv {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signUpCloseBtn {
+    font-size: 20px;
+    cursor: pointer;
+    color: #7a7c7f;
+}
+
+.signUpBodyContainer {
+    width: 100%;
+    height: 85%;
+    /* background: paleturquoise; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signUpMainBody {
+    width: 93%;
+    height: 95%;
+    /* background: yellow; */
+}
+
+.signUpNameDiv {
+    width: 100%;
+    height: 13%;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.signUpFirstNameInput,
+.signUpSurnameInput {
+    width: 48%;
+    height: 80%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
+.errorP{
+    color: red;
+    font-size: 11px;
+    width: 100%;
+    margin-bottom: 10px;
+    /* text-align: left; */
+}
+
+.signUpEmailDiv,
+.signUpPasswordDiv {
+    width: 100%;
+    height: 13%;
+    /* background: blue; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.signUpEmailInput,
+.signUpPasswordInput {
+    width: 100%;
+    height: 80%;
+    outline: none;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+}
+
+.signUpDOBContainer,
+.signUpGenderContainer {
+    width: 100%;
+    height: 13%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background: pink; */
+}
+
+.signUpDOBP,
+.signUpGenderP {
+    font-size: 10px;
+}
+
+.signUpDOBDiv,
+.signUpGenderDiv {
+    width: 100%;
+    height: 70%;
+    /* background: grey; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#signUpDayOfBirthSelect,
+#signUpMonthOfBirthSelect,
+#signUpYearOfBirthSelect {
+    width: 30%;
+    height: 95%;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    outline: none;
+}
+
+.signUpFemaleGenderSpan {
+    width: 30%;
+    height: 95%;
+    border-radius: 5px;
+    border: 1px solid #ccd0d5;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.signUpLearmMoreWriteUpDiv,
+.signUpTermsWriteUpDiv {
+    width: 100%;
+    height: 10%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signUpLearnMoreP,
+.signUpTermsP,
+.signUp_SMS_MsgP {
+    font-size: 11px;
+    color: #7a7c7f; 
+    height: 40%;
+}
+
+.signUpLearnMoreSpan,
+.signUpTermsSpan,
+.signUpPrivacySpan,
+.signUpCookiesSpan {
+    color: blue;
+    cursor: pointer;
+}
+
+.signUpLearnMoreSpan:hover,
+.signUpTermsSpan:hover,
+.signUpPrivacySpan:hover,
+.signUpCookiesSpan:hover {
+    text-decoration: underline;
+}
+
+.signUpButtonDiv{
+    width: 100%;
+    height: 15%;
+    /* background: rgb(191, 210, 191);   */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signUpButton{
+    width: 50%;
+    height: 60%;
+    border-radius: 5px;
+    background: #5e60ce;
+    color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.signUpWriteUp{
+    width: 30%;
+    height: 20%;
+}
