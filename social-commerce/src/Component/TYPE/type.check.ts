@@ -7,4 +7,12 @@ export interface FormValues {
     surname: string;
     email: string;
     password: string;
+    contact: string;
 }
+
+// export type FormValues = {
+//     password: string;
+//   };
+
+}
+
